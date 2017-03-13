@@ -9,7 +9,7 @@ package up your Ruby library into a gem. Put your Ruby code in the file
 `lib/scoring_advice`. To experiment with that code, run `bin/console` 
 for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
