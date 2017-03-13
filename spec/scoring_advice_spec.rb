@@ -1,11 +1,16 @@
-require "spec_helper"
+# -*- encoding: utf-8 -*-
+require_relative '../lib/scoring_advice'
 
 describe ScoringAdvice do
-  it "has a version number" do
-    expect(ScoringAdvice::VERSION).not_to be nil
-  end
+  describe "#ul" do
 
-  it "does something useful" do
-    expect(false).to eq(true)
+    it ":expect create an unordered list" do
+      ScoringAdvice.ul(['foo', 'bar']).should eql "<ul><li>foo</li><li>bar</li></ul>"
+    end
+
+    it ":expect escape appropriate characters" do
+      ScoringAdvice.ul(['<élan>']).should match %r(&lt;&eacute;lan&gt;)
+    end
+
   end
 end
