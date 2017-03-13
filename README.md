@@ -29,7 +29,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require the Gem:
+  require 'scoring_advice'
 
 ## Development
 
